@@ -8,19 +8,26 @@
 
 double GestionnaireUsagers::obtenirChiffreAffaires() const
 {
-	
+	double somme = 0;
+	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++)
+	{
+		Usager* usager = dynamic_cast<Usager*>(*it);
+		somme += usager->obtenirTotalAPayer();
+	}
+	return somme;
 }
 
 void GestionnaireUsagers::encherir(Client * client, ProduitAuxEncheres * produit, double montant) const
 {
-
+	if (produit->obtenirPrix() < montant)
+		produit->mettreAJourEnchere(client, montant);
 }
 
 void GestionnaireUsagers::reinitialiser()
 {
 	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++)
 	{
-		Usager* usager = dynamic_cast<Usager*>(&it);
+		Usager* usager = dynamic_cast<Usager*>(*it);
 		if (usager) {
 			usager->reinitialiser();
 		}
@@ -30,5 +37,11 @@ void GestionnaireUsagers::reinitialiser()
 
 void GestionnaireUsagers::afficherProfils() const
 {
-
+	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++)
+	{
+		Usager* usager = dynamic_cast<Usager*>(*it);
+		if (usager) {
+			usager->afficher();
+		}
+	}
 }
