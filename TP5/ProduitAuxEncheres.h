@@ -22,7 +22,6 @@ class ProduitAuxEncheres : public Produit
     void modifierPrixInitial(double prixInitial);
     void modifierEncherisseur(Client* encherisseur);
     void mettreAJourEnchere(Client *encherisseur, double nouveauPrix);
-	bool operator==(const int &reference) const;
 
   private:
     double prixInitial_;

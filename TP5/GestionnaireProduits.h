@@ -3,27 +3,49 @@
 * Date: 9 mars 2018
 * Auteur: Ryan Hardie
 *******************************************/
-#ifndef GESTIONNAIREPRODUITS_H
-#define GESTIONNAIREPRODUITS_H
 
 #pragma once
+#ifndef GESTIONNAIRE_H
+#define GESTIONNAIRE_H
 
+#include <vector>
+#include "Usager.h"
+#include "Client.h"
+#include "ProduitAuxEncheres.h"
 #include "GestionnaireGenerique.h"
+#include "Produit.h"
+#include<map>
+#include"Foncteur.h"
 
 // TODO : Créer la classe GestionnaireProduits
-class GestionnaireProduits : public GestionnaireGenerique;
+
+// TODO : Méthodes :
+/*
+- reinitialiserClient();
+- reinitialiserFournisseur();
+- afficher();
+- obtenirTotalAPayer();
+- obtenirTotalApayerPremium();
+- trouverProduitPlusCher();
+- obtenirProduitsEntre();
+- obtenirProduitSuivant();
+*/
+using namespace std;
+
+class GestionnaireProduits : public GestionnaireGenerique<Produit, multimap< int, Produit*>, AjouterProduit(), SupprimerProduit()>
 {
-	public:
-	// TODO : Méthodes :
-	/*
-	- reinitialiserClient();
-	- reinitialiserFournisseur();
-	- afficher();
-	- obtenirTotalAPayer();
-	- obtenirTotalApayerPremium();
-	- trouverProduitPlusCher();
-	- obtenirProduitsEntre();
-	- obtenirProduitSuivant();
-	*/
+public:
+	void reinitialiserClient();
+	void reinitialiserFournisseur();
+	void afficher();
+	void obtenirTotalAPayer();
+	void obtenirTotalApayerPremium();
+	Produit trouverPrdouitPlusCher();
+	vector<pair<int,Produit*>> obtenirProduitsEntre(double debut, double fin);
+	Produit obtenirProduitSuivant(Produit* produit);
+
+
+	
 };
+
 #endif

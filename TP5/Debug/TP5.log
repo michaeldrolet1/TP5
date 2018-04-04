@@ -1,0 +1,49 @@
+﻿  Usager.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\usager.cpp(8): error C2614: 'Usager' : initialisation de membre non conforme : 'identifiant_' n'est ni une base ni un membre
+c:\users\michael drolet\google drive\c++\tp5\tp5\usager.cpp(40): error C2065: 'identifiant_' : identificateur non déclaré
+c:\users\michael drolet\google drive\c++\tp5\tp5\usager.cpp(56): error C2065: 'reference' : identificateur non déclaré
+  Solde.cpp
+  ProduitSolde.cpp
+  ProduitAuxEncheres.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.cpp(58): error C2276: '*' : opération non conforme sur l'expression d'une fonction membre liée
+  Produit.cpp
+  main.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\main.cpp(47): error C2039: 'obtenirIdentifiant' : n'est pas membre de 'Client'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(11): note: voir la déclaration de 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\main.cpp(53): error C2039: 'obtenirIdentifiant' : n'est pas membre de 'Client'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(11): note: voir la déclaration de 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\main.cpp(59): error C2039: 'obtenirIdentifiant' : n'est pas membre de 'ClientPremium'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.h(9): note: voir la déclaration de 'ClientPremium'
+c:\users\michael drolet\google drive\c++\tp5\tp5\main.cpp(66): error C2039: 'obtenirIdentifiant' : n'est pas membre de 'ClientPremium'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.h(9): note: voir la déclaration de 'ClientPremium'
+c:\users\michael drolet\google drive\c++\tp5\tp5\main.cpp(73): error C2039: 'obtenirIdentifiant' : n'est pas membre de 'Fournisseur'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\fournisseur.h(11): note: voir la déclaration de 'Fournisseur'
+c:\users\michael drolet\google drive\c++\tp5\tp5\main.cpp(78): error C2039: 'obtenirIdentifiant' : n'est pas membre de 'Fournisseur'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\fournisseur.h(11): note: voir la déclaration de 'Fournisseur'
+  GestionnaireUsagers.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(34): error C2059: erreur de syntaxe : '*'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(40): note: voir la référence à l'instanciation de classe modèle 'FoncteurDiminuerPourcent::GestionnaireGenerique<T,C,A,S,Predicate>' en cours de compilation
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(35): error C2059: erreur de syntaxe : '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\foncteur.h(58): fatal error C1075: l'élément accolade '{' gauche n'a pas été équilibré en fin du fichier
+  GestionnaireUsager.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(34): error C2059: erreur de syntaxe : '*'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(40): note: voir la référence à l'instanciation de classe modèle 'FoncteurDiminuerPourcent::GestionnaireGenerique<T,C,A,S,Predicate>' en cours de compilation
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(35): error C2059: erreur de syntaxe : '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\foncteur.h(58): fatal error C1075: l'élément accolade '{' gauche n'a pas été équilibré en fin du fichier
+  GestionnaireProduits.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(34): error C2059: erreur de syntaxe : '*'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(40): note: voir la référence à l'instanciation de classe modèle 'FoncteurDiminuerPourcent::GestionnaireGenerique<T,C,A,S,Predicate>' en cours de compilation
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(35): error C2059: erreur de syntaxe : '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaireproduits.h(14): error C2955: 'FoncteurDiminuerPourcent::GestionnaireGenerique' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnairegenerique.h(20): note: voir la déclaration de 'FoncteurDiminuerPourcent::GestionnaireGenerique'
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaireproduits.h(14): error C2143: erreur de syntaxe : absence de ',' avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\foncteur.h(58): fatal error C1075: l'élément accolade '{' gauche n'a pas été équilibré en fin du fichier
+  Gestionnaire.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaire.cpp(12): error C2039: 'afficherProfil' : n'est pas membre de 'Usager'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\usager.h(10): note: voir la déclaration de 'Usager'
+  Fournisseur.cpp
+  ClientPremium.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(35): error C2039: 'afficherProfil' : n'est pas membre de 'Client'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(11): note: voir la déclaration de 'Client'
+  Client.cpp
+  Génération de code en cours...

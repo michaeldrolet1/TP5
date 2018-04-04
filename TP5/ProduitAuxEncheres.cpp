@@ -52,9 +52,3 @@ void ProduitAuxEncheres::mettreAJourEnchere(Client *encherisseur, double nouveau
         encherisseur_->enleverProduit(this);
     encherisseur_ = encherisseur;
 }
-
-bool ProduitAuxEncheres::operator==(const int & reference) const
-{
-	return (*this->obtenirReference == reference);
-	
-}

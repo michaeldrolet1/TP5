@@ -5,37 +5,62 @@
 *******************************************/
 
 #pragma once
-#ifndef GESTIONNAIREGENERIQUE_H
-#define GESTIONNAIREGENERIQUE_H
-
-#include <string>
-#include <vector>
-#include <map>
-#include <set>
-#include "Foncteur.h"
 
 // TODO : Créer la classe GestionnaireGenerique
-template < typename T, typename C, typename A, typename S, typename Predicate> // le predicat va peut etre pas la
+template <typename T, typename C, typename A, typename S > 
 class GestionnaireGenerique
 {
-	public:
-		GestionnaireGenerique();
+public:
+	C obtenirConteneur() const;
+	void Ajouter(T* T);
+	void Supprimer(T* T);
+	template<typename Predicate>
+	void pourChaqueElement(Predicate predicate)const;
+
+
+protected:
+	C conteneur_;
+};
+
+	
+	
+	template <typename T, typename C, typename A, typename S >
+	void GestionnaireGenerique<T, C , A, S>::Ajouter (T* t)
+	{
+		A ajouter(conteneur_);
+			conteneur_ = ajouter(t);
 		
 
+	};
 
-			// TODO : Méthodes :
-			/*
-			- ajouter()
-			- supprime()
-			- obtenirConteneur()
-			- pourChaqueElement()
-			*/
+	template <typename T, typename C, typename A, typename S >
+	void GestionnaireGenerique<T, C, A, S>::Supprimer (T* t)
+	{
+		S supprimer(conteneur_);
+		conteneur_ = supprimer(t);
 
-		A ajouter(*T);
-		S supprimer(*T);
-		C obtenirConteneur();
-		void pourChaqueElement(Predicate);
-	protected:
-		C conteneur_;
-};
-#endif
+	};
+
+	template <typename T, typename C, typename A, typename S >
+	C GestionnaireGenerique<T, C, A, S>::obtenirConteneur() const
+	{
+		return conteneur_;
+	};
+
+	template <typename T, typename C, typename A, typename S , typename foncteur>
+	void GestionnaireGenerique<T, C, A, S>::pourChaqueElement(Foncteur foncteur) const
+	{
+		for_each(conteneur_.begin(), conteneur_.end(), foncteur);
+
+	};
+	
+
+
+// TODO : Méthodes :
+/*
+- ajouter()
+- supprime()
+- obtenirConteneur()
+- pourChaqueElement()
+*/
+
