@@ -5,7 +5,7 @@
 *******************************************/
 
 #pragma once
-#ifndef GESTIONNAIRE_H
+
 #define GESTIONNAIRE_H
 
 #include <vector>
@@ -40,9 +40,9 @@ public:
 	void afficher();
 	void obtenirTotalAPayer();
 	void obtenirTotalApayerPremium();
-	Produit trouverPrdouitPlusCher();
+	Produit trouverProduitPlusCher();
 	vector<pair<int,Produit*>> obtenirProduitsEntre(double debut, double fin);
-	Produit obtenirProduitSuivant(Produit* produit);
+	Produit* obtenirProduitSuivant(Produit* produit);
 
 
 	

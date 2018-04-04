@@ -47,10 +47,10 @@ protected:
 		return conteneur_;
 	};
 
-	template <typename T, typename C, typename A, typename S , typename foncteur>
-	void GestionnaireGenerique<T, C, A, S>::pourChaqueElement(Foncteur foncteur) const
+	template <typename T, typename C, typename A, typename S >
+	void GestionnaireGenerique<T, C, A, S>::pourChaqueElement(Predicate predicate) const
 	{
-		for_each(conteneur_.begin(), conteneur_.end(), foncteur);
+		for_each(conteneur_.begin(), conteneur_.end(), predicate);
 
 	};
 	
