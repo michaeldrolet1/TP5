@@ -69,5 +69,5 @@ void Client::reinitialiser()
 
 Produit * Client::trouverProduitPlusCher() const
 {
-	return &(panier_->trouverPrdouitPlusCher());
+	return &(panier_->trouverProduitPlusCher());
 }

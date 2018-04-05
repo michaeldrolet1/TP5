@@ -6,7 +6,7 @@
 
 #pragma once
 
-#define GESTIONNAIRE_H
+
 
 #include <vector>
 #include "Usager.h"
@@ -32,20 +32,19 @@
 */
 using namespace std;
 
-class GestionnaireProduits : public GestionnaireGenerique<Produit, multimap< int, Produit*>, AjouterProduit(), SupprimerProduit()>
+class GestionnaireProduits : public GestionnaireGenerique<Produit, multimap< int, Produit*>, AjouterProduit, SupprimerProduit>
 {
 public:
 	void reinitialiserClient();
 	void reinitialiserFournisseur();
 	void afficher();
-	void obtenirTotalAPayer();
-	void obtenirTotalApayerPremium();
-	Produit trouverProduitPlusCher();
-	vector<pair<int,Produit*>> obtenirProduitsEntre(double debut, double fin);
-	Produit* obtenirProduitSuivant(Produit* produit);
+	double obtenirTotalAPayer()const;
+	double obtenirTotalApayerPremium() const;
+	Produit trouverProduitPlusCher() const ;
+	vector<pair<int,Produit*>> obtenirProduitsEntre(double debut, double fin) const;
+	Produit* obtenirProduitSuivant(Produit* produit )const;
 
 
 	
 };
 
-#endif

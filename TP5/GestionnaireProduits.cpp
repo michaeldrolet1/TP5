@@ -6,6 +6,9 @@
 
 #include "GestionnaireProduits.h"
 #include<numeric>
+#include<algorithm>
+#include<functional>
+using namespace std::placeholders;
 
 void GestionnaireProduits::reinitialiserClient()
 {
@@ -47,35 +50,44 @@ void GestionnaireProduits::afficher()
 	}
 };
 
-void GestionnaireProduits::obtenirTotalAPayer()
+double GestionnaireProduits::obtenirTotalAPayer() const
 {
-	double somme = accumulate(conteneur_.begin()->second, conteneur_.end()->second, 0);
-
+	double somme = accumulate(conteneur_.begin()->second->obtenirPrix(), conteneur_.end()->second->obtenirPrix(), 0);
+	return somme;
 };
 
-void GestionnaireProduits::obtenirTotalApayerPremium()
+double GestionnaireProduits::obtenirTotalApayerPremium() const
 {
 	double rabais = 5;
 	double somme = 0;
 	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++)
 	{
-		somme += it->second->obtenirPrix - 5;
+		somme += it->second->obtenirPrix() - 5;
 	}
+	return somme;
 
 }
-Produit GestionnaireProduits::trouverProduitPlusCher()
+Produit GestionnaireProduits::trouverProduitPlusCher() const
 {
-
-	return Produit();
+	
+	
+	auto produitPlusCher = max_element(conteneur_.begin(), conteneur_.end(), [](const pair<int, Produit*> P1, const pair<int, Produit*> P2)
+	{
+		return P1.second->obtenirPrix() < P2.second->obtenirPrix();
+	});
+	if (produitPlusCher == conteneur_.end()) {
+		return nullptr;
+	}
 }
-vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double debut, double fin)
+vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double debut, double fin) const
 {
 	vector<pair<int, Produit*>> vecteur;
 	copy_if(debut, fin, back_inserter(vecteur),FoncteurIntervalle(debut,fin));
 	return vecteur;
 }
-Produit* GestionnaireProduits::obtenirProduitSuivant(Produit * produit)
+Produit* GestionnaireProduits::obtenirProduitSuivant(Produit * produit) const
 {
-	Produit* produitReferenceSuperieur = find_if(conteneur_.begin(),conteneur_.end(),bind(  )
+	auto it = find_if(conteneur_.begin(), conteneur_.end(), bind(greater< pair<int, Produit*>>() , _1, pair<int, Produit*> (produit->obtenirReference(), produit)));
+	return it->second;
 }
 ;

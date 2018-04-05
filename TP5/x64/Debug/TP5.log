@@ -1,0 +1,88 @@
+﻿  main.cpp
+  Produit.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C2238: jetons inattendus avant ';'
+  GestionnaireUsagers.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(23): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(24): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaireusagers.cpp(23): error C2660: 'ProduitAuxEncheres::mettreAJourEnchere' : la fonction ne prend pas 2 arguments
+  GestionnaireUsager.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(23): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(24): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2238: jetons inattendus avant ';'
+  GestionnaireProduits.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C2238: jetons inattendus avant ';'
+  Gestionnaire.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(23): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(24): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaire.cpp(12): error C2039: 'afficherProfil' : n'est pas membre de 'Usager'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\usager.h(10): note: voir la déclaration de 'Usager'
+c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaire.cpp(41): error C2660: 'ProduitAuxEncheres::mettreAJourEnchere' : la fonction ne prend pas 2 arguments
+  Fournisseur.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(21): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(33): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\fournisseur.cpp(43): error C2039: 'Ajouter' : n'est pas membre de 'GestionnaireProduits'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaireproduits.h(35): note: voir la déclaration de 'GestionnaireProduits'
+  ClientPremium.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(23): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(24): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(26): error C2228: la partie gauche de '.size' doit avoir un class/struct/union
+  c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(26): note: le type est 'GestionnaireProduits *const '
+  c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(26): note: voulez-vous utiliser '->' à la place ?
+c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(27): error C2819: le type 'GestionnaireProduits' n'a pas d'opérateur 'operator ->' de membre surchargé
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaireproduits.h(35): note: voir la déclaration de 'GestionnaireProduits'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(27): note: voulez-vous utiliser '.' à la place ?
+c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(27): error C2039: 'obtenirPrix' : n'est pas membre de 'GestionnaireProduits'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaireproduits.h(35): note: voir la déclaration de 'GestionnaireProduits'
+c:\users\michael drolet\google drive\c++\tp5\tp5\clientpremium.cpp(35): error C2039: 'afficherProfil' : n'est pas membre de 'Client'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\client.h(12): note: voir la déclaration de 'Client'
+  Client.cpp
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(19): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(23): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(24): error C2061: erreur de syntaxe : identificateur 'Client'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2143: erreur de syntaxe : absence de ';' avant '*'
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+c:\users\michael drolet\google drive\c++\tp5\tp5\produitauxencheres.h(28): error C2238: jetons inattendus avant ';'
+c:\users\michael drolet\google drive\c++\tp5\tp5\client.cpp(62): error C2039: 'Ajouter' : n'est pas membre de 'GestionnaireProduits'
+  c:\users\michael drolet\google drive\c++\tp5\tp5\gestionnaireproduits.h(35): note: voir la déclaration de 'GestionnaireProduits'
+  Génération de code en cours...
+  Ignoré... (aucune modification pertinente détectée)
+  ProduitAuxEncheres.cpp

@@ -50,7 +50,7 @@ void Fournisseur::enleverProduit(Produit *produit)
 
 Produit * Fournisseur::trouverProduitPlusCher() const
 {
-	return &(catalogue_->trouverPrdouitPlusCher());
+	return &(catalogue_->trouverProduitPlusCher());
 }
 
 void Fournisseur::DiminuerPrix(int pourcent) const

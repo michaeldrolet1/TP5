@@ -18,9 +18,9 @@ class FoncteurEgal
 {
 	public: 
 		FoncteurEgal(T* t) : t_(t) {};
-		bool operator()(pair<int, T* > &pair) const
+		bool operator()(pair<int, T* > pair) const
 		{
-			return t_ == pair.second;
+			return (t_ == pair.second);
 			
 		};
 
@@ -39,10 +39,12 @@ Méthodes :
 class FoncteurGenerateurId
 {
 	public:
-		FoncteurGenerateurId(int id) : id_(0) {};
-		void operator()()
+		FoncteurGenerateurId(int id =0) : id_(id) {};
+		//avant on avait void
+		int operator()()
 		{
 			id_++;
+			return id_;
 		};
 	
 	private:
@@ -62,13 +64,14 @@ public:
 	void operator()(pair<int, Produit* > pair)
 	{
 		if (typeid(pair.second) != typeid(ProduitSolde))
-			pair.second->modifierPrix(pair.second->obtenirPrix -= pair.second->obtenirPrix*(pourcentage_ / 100));
+			pair.second->modifierPrix(pair.second->obtenirPrix()*(1 - pourcentage_));
 
 	};
 
 private:
 	int pourcentage_;
 };
+
 // TODO : Créer le FoncteurIntervalle
 /*
 Attributs :
@@ -83,7 +86,7 @@ Méthodes :
 		FoncteurIntervalle(double borneInf, double borneSup) : borneInf_(borneInf), borneSup_(borneSup) {};
 		bool operator()(pair<int, Produit* > pair)
 		{
-			return(pair.second->obtenirPrix <= borneSup_ && pair.second->obtenirPrix >= borneInf_);
+			return(pair.second->obtenirPrix() <= borneSup_ && pair.second->obtenirPrix() >= borneInf_);
 		};
 
 	private:
@@ -179,13 +182,16 @@ public:
 
 	set < Usager*> & operator()(Usager* usager)
 	{
-		FoncteurEgal<Usager>  comparateur(usager);
-		auto it = find_if(set_.begin(), set_.end(), comparateur);
-		if (it != set_.end())
+		
+	
+		for (auto it = set_.begin(); it != set_.end(); it++)
 		{
-			set_.erase(it);
-			return set_;
-		}
+			if (it != set_.end())
+			{
+				set_.erase(it);
+				return set_;
+			};
+		};
 
 	};
 
