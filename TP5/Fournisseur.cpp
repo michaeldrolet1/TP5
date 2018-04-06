@@ -40,7 +40,7 @@ void Fournisseur::reinitialiser()
 
 void Fournisseur::ajouterProduit(Produit *produit)
 {
-	catalogue_->Ajouter(produit);
+	catalogue_->ajouter(produit);
 }
 
 void Fournisseur::enleverProduit(Produit *produit)

@@ -1,6 +1,11 @@
 #include "ClientPremium.h"
 #include <iostream>
 
+
+
+
+
+
 ClientPremium::ClientPremium(unsigned int joursRestants)
     : Client(),
       joursRestants_(joursRestants)
@@ -16,7 +21,7 @@ ClientPremium::ClientPremium(const string &nom, const string &prenom, int identi
 }
 
 unsigned int ClientPremium::obtenirJoursRestants() const
-{
+{pani
     return joursRestants_;
 }
 
@@ -24,7 +29,7 @@ double ClientPremium::obtenirTotalAPayer() const
 {
     double montant = 0;
     for (unsigned int i = 0; i < panier_.size(); i++) {
-        double prix = panier_[i]->obtenirPrix();
+        double prix = pan->obtenirPrix();
         montant += prix < 5 ? 0 : prix - 5;
     }
     return montant;
@@ -32,7 +37,7 @@ double ClientPremium::obtenirTotalAPayer() const
 
 void ClientPremium::afficherProfil() const
 {
-    Client::afficherProfil();
+    Client::afficher();
     cout << "\t\tjours restants:\t" << joursRestants_ << endl;
 }
 

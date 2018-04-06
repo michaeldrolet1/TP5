@@ -10,12 +10,10 @@
 
 #include <vector>
 #include "Usager.h"
-#include "Client.h"
-#include "ProduitAuxEncheres.h"
 #include "GestionnaireGenerique.h"
-#include "Produit.h"
 #include<map>
 #include"Foncteur.h"
+#include"Produit.h"
 
 // TODO : Créer la classe GestionnaireProduits
 

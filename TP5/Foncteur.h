@@ -5,7 +5,6 @@
 *******************************************/
 
 #pragma once
-#include"Produit.h"
 #include"ProduitSolde.h"
 #include <map>
 #include <algorithm>

@@ -59,7 +59,7 @@ void Client::enleverProduit(Produit *produit)
 
 void Client::ajouterProduit(Produit *produit)
 {
-	panier_->Ajouter(produit);
+	panier_->ajouter(produit);
 }
 
 void Client::reinitialiser()

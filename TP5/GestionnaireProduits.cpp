@@ -5,9 +5,11 @@
 *******************************************/
 
 #include "GestionnaireProduits.h"
+#include "ProduitAuxEncheres.h"
 #include<numeric>
 #include<algorithm>
 #include<functional>
+
 using namespace std::placeholders;
 
 void GestionnaireProduits::reinitialiserClient()
@@ -52,7 +54,11 @@ void GestionnaireProduits::afficher()
 
 double GestionnaireProduits::obtenirTotalAPayer() const
 {
-	double somme = accumulate(conteneur_.begin()->second->obtenirPrix(), conteneur_.end()->second->obtenirPrix(), 0);
+	double somme = 0;
+	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++)
+	{
+		somme += it->second->obtenirPrix();
+	}
 	return somme;
 };
 
@@ -82,7 +88,7 @@ Produit GestionnaireProduits::trouverProduitPlusCher() const
 vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double debut, double fin) const
 {
 	vector<pair<int, Produit*>> vecteur;
-	copy_if(debut, fin, back_inserter(vecteur),FoncteurIntervalle(debut,fin));
+	copy_if(conteneur_.begin(), conteneur_.end(), back_inserter(vecteur),FoncteurIntervalle(debut,fin));
 	return vecteur;
 }
 Produit* GestionnaireProduits::obtenirProduitSuivant(Produit * produit) const

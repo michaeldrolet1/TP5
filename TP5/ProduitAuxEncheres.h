@@ -3,8 +3,8 @@
 
 #include <string>
 #include <iostream>
-#include "Produit.h"
 #include "Client.h"
+#include "Produit.h"
 
 using namespace std;
 

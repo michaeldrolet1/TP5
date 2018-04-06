@@ -4,6 +4,7 @@
 #include <string>
 #include "Client.h"
 
+
 using namespace std;
 
 class ClientPremium : public Client
@@ -13,7 +14,7 @@ class ClientPremium : public Client
     ClientPremium(const string &nom, const string &prenom, int identifiant, const string &codePostal, unsigned int codeClient, unsigned int joursRestants = 0);
 
     unsigned int obtenirJoursRestants() const;
-    virtual double obtenirTotalAPayer() const;
+    virtual double obtenirTotalAPayer() const; 
     virtual void afficherProfil() const;
 
     void modifierJoursRestants(unsigned int joursRestants);

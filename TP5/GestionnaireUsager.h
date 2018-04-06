@@ -1,10 +1,10 @@
-#pragma once
+
 #ifndef GESTIONNAIRE_H
 #define GESTIONNAIRE_H
 
 #include <vector>
-#include "Usager.h"
-#include "Client.h"
+
+
 #include "ProduitAuxEncheres.h"
 
 
