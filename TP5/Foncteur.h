@@ -106,8 +106,7 @@ Méthodes :
 			
 			 multimap <int, Produit*> operator()(Produit* produit)
 			{
-				 multimap<int, Produit*> ::iterator begin = multimap_.begin();
-				 multimap_.insert(pair<int, Produit*>(begin->first, produit));
+				 multimap_.insert(pair<int, Produit*>(produit->obtenirReference(), produit));
 				 return multimap_;
 			}; 
 			 
@@ -139,9 +138,8 @@ class SupprimerProduit
 			if (it != multimap_.end())
 			{
 				multimap_.erase(it);
-				return multimap_;
 			}
-			 
+			return multimap_;
 		};
 
 	private:

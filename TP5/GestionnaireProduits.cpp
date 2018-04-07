@@ -17,11 +17,11 @@ void GestionnaireProduits::reinitialiserClient()
 	for (auto it = conteneur_.begin(); it != conteneur_.end(); it++)
 	{
 		ProduitAuxEncheres* produit = dynamic_cast<ProduitAuxEncheres*>(it->second);
-			if (produit) {
-				produit->modifierEncherisseur(nullptr);
-				produit->modifierPrix(produit->obtenirPrixInitial());
+		if (produit) {
+			produit->modifierEncherisseur(nullptr);
+			produit->modifierPrix(produit->obtenirPrixInitial());
 
-			}
+		}
 	}
 	conteneur_.clear();
 
@@ -75,8 +75,6 @@ double GestionnaireProduits::obtenirTotalApayerPremium() const
 }
 Produit GestionnaireProduits::trouverProduitPlusCher() const
 {
-	
-	
 	auto produitPlusCher = max_element(conteneur_.begin(), conteneur_.end(), [](const pair<int, Produit*> P1, const pair<int, Produit*> P2)
 	{
 		return P1.second->obtenirPrix() < P2.second->obtenirPrix();
@@ -84,16 +82,16 @@ Produit GestionnaireProduits::trouverProduitPlusCher() const
 	if (produitPlusCher == conteneur_.end()) {
 		return nullptr;
 	}
+	return *(produitPlusCher->second);
 }
 vector<pair<int, Produit*>> GestionnaireProduits::obtenirProduitsEntre(double debut, double fin) const
 {
 	vector<pair<int, Produit*>> vecteur;
-	copy_if(conteneur_.begin(), conteneur_.end(), back_inserter(vecteur),FoncteurIntervalle(debut,fin));
+	copy_if(conteneur_.begin(), conteneur_.end(), back_inserter(vecteur), FoncteurIntervalle(debut, fin));
 	return vecteur;
 }
 Produit* GestionnaireProduits::obtenirProduitSuivant(Produit * produit) const
 {
-	auto it = find_if(conteneur_.begin(), conteneur_.end(), bind(greater< pair<int, Produit*>>() , _1, pair<int, Produit*> (produit->obtenirReference(), produit)));
+	auto it = find_if(conteneur_.begin(), conteneur_.end(), bind(greater< pair<int, Produit*>>(), _1, pair<int, Produit*>(produit->obtenirReference(), produit)));
 	return it->second;
 }
-;

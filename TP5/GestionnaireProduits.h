@@ -36,7 +36,7 @@ public:
 	void reinitialiserClient();
 	void reinitialiserFournisseur();
 	void afficher();
-	double obtenirTotalAPayer()const;
+	double obtenirTotalAPayer() const;
 	double obtenirTotalApayerPremium() const;
 	Produit trouverProduitPlusCher() const ;
 	vector<pair<int,Produit*>> obtenirProduitsEntre(double debut, double fin) const;
