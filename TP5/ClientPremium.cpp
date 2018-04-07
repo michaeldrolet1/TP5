@@ -21,7 +21,7 @@ ClientPremium::ClientPremium(const string &nom, const string &prenom, int identi
 }
 
 unsigned int ClientPremium::obtenirJoursRestants() const
-{pani
+{
     return joursRestants_;
 }
 
@@ -29,7 +29,7 @@ double ClientPremium::obtenirTotalAPayer() const
 {
     double montant = 0;
     for (unsigned int i = 0; i < panier_.size(); i++) {
-        double prix = pan->obtenirPrix();
+        double prix = panier_->obtenirPrix();
         montant += prix < 5 ? 0 : prix - 5;
     }
     return montant;

@@ -1,9 +1,6 @@
 ﻿  ClientPremium.cpp
-c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(30): error C2228: left of '.size' must have class/struct/union
-  c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(30): note: type is 'GestionnaireProduits *const '
-  c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(30): note: did you intend to use '->' instead?
-c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(31): error C2819: type 'GestionnaireProduits' does not have an overloaded member 'operator ->'
-  c:\users\michael\google drive\c++\tp5\tp5\gestionnaireproduits.h(33): note: see declaration of 'GestionnaireProduits'
-  c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(31): note: did you intend to use '.' instead?
-c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(31): error C2039: 'obtenirPrix': is not a member of 'GestionnaireProduits'
+c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(31): error C2228: left of '.size' must have class/struct/union
+  c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(31): note: type is 'GestionnaireProduits *const '
+  c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(31): note: did you intend to use '->' instead?
+c:\users\michael\google drive\c++\tp5\tp5\clientpremium.cpp(32): error C2039: 'obtenirPrix': is not a member of 'GestionnaireProduits'
   c:\users\michael\google drive\c++\tp5\tp5\gestionnaireproduits.h(33): note: see declaration of 'GestionnaireProduits'
